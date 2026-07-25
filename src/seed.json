@@ -1,0 +1,121 @@
+{
+  "version": 1,
+  "projects": [
+    {
+      "id": "p_21cm",
+      "name": "The 21cm paper",
+      "tasks": [
+        { "id": "t_21cm_1", "name": "Read and revise the paper text", "status": "Not started", "due": "" },
+        { "id": "t_21cm_2", "name": "Releasing the code and documentation publicly", "status": "Not started", "due": "" },
+        { "id": "t_21cm_3", "name": "Ask Barry Barish for approval on their name", "status": "Not started", "due": "" },
+        { "id": "t_21cm_4", "name": "Follow up with Bahram about feedback", "status": "Not started", "due": "" },
+        { "id": "t_21cm_5", "name": "Find a journal to submit", "status": "Done", "due": "" },
+        { "id": "t_21cm_6", "name": "Check the package against data other than EDGES, such as SARAS", "status": "Done", "due": "" },
+        { "id": "t_21cm_7", "name": "Make a parameter estimation package based on MSc thesis", "status": "Done", "due": "" }
+      ]
+    },
+    {
+      "id": "p_bench",
+      "name": "The classical benchmarking paper",
+      "tasks": [
+        { "id": "t_bn_1", "name": "Check all the bibtex entries", "status": "Not started", "due": "" },
+        { "id": "t_bn_2", "name": "Send the corrected version to Joshua Bloom", "status": "Not started", "due": "" },
+        { "id": "t_bn_3", "name": "Send to co-authors", "status": "Not started", "due": "" },
+        { "id": "t_bn_4", "name": "Implement the comments", "status": "Not started", "due": "" },
+        { "id": "t_bn_5", "name": "Research how to make official benchmarks", "status": "Not started", "due": "" }
+      ]
+    },
+    {
+      "id": "p_roman",
+      "name": "The Roman Super-resolution Projects",
+      "tasks": [
+        { "id": "t_rm_1", "name": "Writing the paper", "status": "Not started", "due": "" },
+        { "id": "t_rm_2", "name": "Talk", "status": "Done", "due": "2026-07-17" },
+        { "id": "t_rm_3", "name": "Try to get results before the talk", "status": "Done", "due": "2026-07-17" },
+        { "id": "t_rm_4", "name": "Making the slides", "status": "Done", "due": "2026-07-15" }
+      ]
+    },
+    {
+      "id": "p_lya",
+      "name": "Lyman-alpha project",
+      "tasks": [
+        { "id": "t_ly_1", "name": "Do we need to get the whole data set from Anson?", "status": "Not started", "due": "" },
+        { "id": "t_ly_2", "name": "Follow up on the training (why the training did not work)", "status": "Done", "due": "" }
+      ]
+    },
+    {
+      "id": "p_finest",
+      "name": "FINEST Proposal",
+      "tasks": [
+        { "id": "t_fn_1", "name": "Write the technical part", "status": "Done", "due": "" },
+        { "id": "t_fn_2", "name": "Ask Bahram to start the proposal on NSPRES", "status": "Done", "due": "2026-07-08" }
+      ]
+    },
+    {
+      "id": "p_fellow",
+      "name": "Off-campus fellowship application",
+      "tasks": [
+        { "id": "t_fw_1", "name": "Write the technical part", "status": "Not started", "due": "2026-07-30" },
+        { "id": "t_fw_2", "name": "Follow up on the recommendation letters", "status": "Not started", "due": "" },
+        { "id": "t_fw_3", "name": "Answer George", "status": "Done", "due": "2026-07-08" },
+        { "id": "t_fw_4", "name": "Follow up on the IPAC letter from Shooby", "status": "Done", "due": "" }
+      ]
+    },
+    {
+      "id": "p_gc",
+      "name": "Green Card Application",
+      "tasks": [
+        { "id": "t_gc_1", "name": "RBFI Tab: read the Fable 5 answers and revise", "status": "Not started", "due": "" },
+        { "id": "t_gc_2", "name": "PE Tab: revise the answers based on those from Fable 5", "status": "Not started", "due": "" },
+        { "id": "t_gc_3", "name": "Publication Record Tab: read the Fable 5 answers and revise", "status": "Not started", "due": "" },
+        { "id": "t_gc_4", "name": "Follow up on the MSc diploma with grad division", "status": "Not started", "due": "" }
+      ]
+    },
+    {
+      "id": "p_bureau",
+      "name": "Bureaucratic tasks",
+      "tasks": [
+        { "id": "t_bu_1", "name": "Check the status of my federal tax return", "status": "In progress", "due": "2026-08-24" },
+        { "id": "t_bu_2", "name": "Book Chicago plane ticket", "status": "Not started", "due": "" },
+        { "id": "t_bu_3", "name": "Book the hotel for Chicago trip", "status": "Not started", "due": "" },
+        { "id": "t_bu_4", "name": "Call Dr. Amiri's office to reschedule the appointment", "status": "Not started", "due": "" },
+        { "id": "t_bu_5", "name": "Call CIBC (1 888 578 1333, in French) to cancel the credit card", "status": "Not started", "due": "" },
+        { "id": "t_bu_6", "name": "Go to the dental clinic to discuss the bill", "status": "Not started", "due": "" },
+        { "id": "t_bu_7", "name": "Find a dietitian covered by my plan", "status": "Not started", "due": "" },
+        { "id": "t_bu_8", "name": "Dispute the AliExpress charge on American Express", "status": "Done", "due": "" }
+      ]
+    },
+    {
+      "id": "p_diplo",
+      "name": "The Diplomatic Training Course",
+      "tasks": [
+        { "id": "t_dp_1", "name": "Read chapter 1", "status": "Not started", "due": "2026-07-13" },
+        { "id": "t_dp_2", "name": "Read chapter 5", "status": "Not started", "due": "2026-07-13" }
+      ]
+    },
+    {
+      "id": "p_home",
+      "name": "Home Improvement",
+      "tasks": [
+        { "id": "t_hm_1", "name": "Checking the i-robot vacuum", "status": "In progress", "due": "" },
+        { "id": "t_hm_2", "name": "Clean the carpets", "status": "Not started", "due": "" },
+        { "id": "t_hm_3", "name": "Install the drawing in bedroom", "status": "Not started", "due": "" },
+        { "id": "t_hm_4", "name": "Install the new shower head", "status": "Not started", "due": "" },
+        { "id": "t_hm_5", "name": "Sell the coffee and side table", "status": "Done", "due": "" },
+        { "id": "t_hm_6", "name": "Unclog the shower drain", "status": "Done", "due": "" },
+        { "id": "t_hm_7", "name": "Buy a new side table", "status": "Done", "due": "" },
+        { "id": "t_hm_8", "name": "Clean the kitchen sink", "status": "Done", "due": "" }
+      ]
+    },
+    {
+      "id": "p_hobby",
+      "name": "Hobbies",
+      "tasks": [
+        { "id": "t_hb_1", "name": "Crochet", "status": "In progress", "due": "" },
+        { "id": "t_hb_2", "name": "Puzzle", "status": "In progress", "due": "" },
+        { "id": "t_hb_3", "name": "Sewing the cut T-shirts", "status": "Not started", "due": "" },
+        { "id": "t_hb_4", "name": "Sewing the new T-shirt", "status": "Not started", "due": "" }
+      ]
+    }
+  ]
+}

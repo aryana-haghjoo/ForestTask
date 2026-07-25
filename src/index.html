@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Security-Policy"
+      content="default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self'; img-src 'self' data:;">
+<title>TaskBranch</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="app">
+
+  <!-- ---------- left: editing sidebar ---------- -->
+  <aside id="side">
+    <div id="brand">
+      <h1>TaskBranch</h1>
+      <p>projects branch, tasks leaf</p>
+    </div>
+
+    <div class="sect">
+      <h2>Add</h2>
+      <div class="row">
+        <input id="npName" placeholder="New project name">
+        <button id="addProj" style="flex:0 0 54px">Add</button>
+      </div>
+      <label class="fld">New task in</label>
+      <select id="taskProj"></select>
+      <input id="ntName" placeholder="Task name" style="margin-top:7px">
+      <div class="row" style="margin-top:7px">
+        <select id="ntStatus">
+          <option>Not started</option><option>In progress</option><option>Done</option>
+        </select>
+        <input id="ntDue" type="date">
+      </div>
+      <button id="addTask" style="margin-top:8px;width:100%">Add task</button>
+    </div>
+
+    <div id="detail">
+      <div id="detailEmpty">
+        Click any node to edit it here.<br><br>
+        Drag the canvas to pan, scroll to zoom, <span class="kbd">⌘0</span> to fit.
+        Click a project's chevron to collapse its branch.
+      </div>
+    </div>
+
+    <div class="legend">
+      <div><span class="dot" style="background:var(--notstarted)"></span>Not started</div>
+      <div><span class="dot" style="background:var(--progress)"></span>In progress</div>
+      <div><span class="dot" style="background:var(--done)"></span>Done</div>
+      <div><span class="dot" style="background:var(--soon);box-shadow:0 0 0 3px rgba(255,176,32,.25)"></span>Due within 7 days</div>
+      <div><span class="dot" style="background:var(--overdue);box-shadow:0 0 0 3px rgba(255,92,92,.28)"></span>Overdue</div>
+    </div>
+  </aside>
+
+  <!-- ---------- middle: the tree ---------- -->
+  <main id="canvas">
+    <div id="topbar">
+      <input id="search" placeholder="Filter tasks…">
+      <button id="hideDone" class="ghost">Hide done</button>
+      <span class="spacer"></span>
+      <button id="fitBtn" class="ghost">Fit</button>
+      <button id="collapseBtn" class="ghost">Collapse all</button>
+      <button id="settingsBtn" class="ghost">Settings</button>
+      <button id="chatBtn" class="ghost on">Chat</button>
+    </div>
+    <svg id="svg"></svg>
+  </main>
+
+  <!-- ---------- right: AI chat ---------- -->
+  <aside id="chat">
+    <div id="chatHead">
+      <h2>Assistant</h2>
+      <span id="provPill">not configured</span>
+      <button class="ghost" id="clearChat">Clear</button>
+    </div>
+    <div id="log"></div>
+    <div id="composer">
+      <div class="chips">
+        <span class="chip">Mark the dental clinic task done</span>
+        <span class="chip">Add a project for my thesis defense</span>
+        <span class="chip">What's overdue?</span>
+      </div>
+      <textarea id="input" placeholder="Tell me what to change…  e.g. “move the CIBC call to next Friday and mark it in progress”"></textarea>
+      <div class="actions">
+        <span class="hint">⏎ send · ⇧⏎ newline</span>
+        <button id="send">Send</button>
+      </div>
+    </div>
+  </aside>
+</div>
+
+<!-- ---------- settings modal ---------- -->
+<div id="modalWrap">
+  <div class="modal">
+    <h3>Assistant settings</h3>
+    <p class="sub">Bring your own key. Requests go straight from this app to the provider — nothing is sent anywhere else.</p>
+
+    <label class="fld">Provider</label>
+    <select id="setProvider">
+      <option value="anthropic">Anthropic (Claude)</option>
+      <option value="openai">OpenAI (ChatGPT)</option>
+    </select>
+
+    <label class="fld">API key</label>
+    <input id="setKey" type="password" placeholder="sk-…" autocomplete="off">
+    <div class="note" id="keyState"></div>
+
+    <label class="fld">Model <span style="text-transform:none;letter-spacing:0">(optional)</span></label>
+    <input id="setModel" placeholder="claude-sonnet-4-5 / gpt-4o">
+
+    <div class="note" id="encNote"></div>
+
+    <div class="btns">
+      <button class="ghost" id="setCancel">Cancel</button>
+      <button id="setSave">Save</button>
+    </div>
+  </div>
+</div>
+
+<script src="tree.js"></script>
+<script src="app.js"></script>
+<script src="ai.js"></script>
+</body>
+</html>
