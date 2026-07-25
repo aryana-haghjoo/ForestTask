@@ -1,12 +1,15 @@
 # TaskBranch
 
+[![GitHub Release](https://img.shields.io/github/v/release/aryana-haghjoo/taskbranch?style=flat-square)](https://github.com/aryana-haghjoo/taskbranch/releases)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](LICENSE)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/aryana-haghjoo/taskbranch/release.yml?style=flat-square)](https://github.com/aryana-haghjoo/taskbranch/actions)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.PLACEHOLDER.svg)](https://doi.org/10.5281/zenodo.PLACEHOLDER)
+
 A desktop task manager that shows your work as a tree instead of a list. Projects are the big branches, tasks are the small ones growing off them. Colour tells you status at a glance, and anything with a due date creeping up gets a glow.
 
 Built because Notion is excellent at storing tasks and bad at letting you *see* them.
 
-![TaskBranch tree view](docs/preview.svg)
-
-*Grey = not started, blue = in progress, green = done, amber = due within a week, red = overdue. Rendered from the real layout code.*
+**Status indicators:** Grey = not started, Blue = in progress, Green = done, Amber = due within a week, Red = overdue.
 
 ## Features
 
