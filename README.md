@@ -3,7 +3,7 @@
 [![GitHub Release](https://img.shields.io/github/v/release/aryana-haghjoo/taskbranch?style=flat-square)](https://github.com/aryana-haghjoo/taskbranch/releases)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](LICENSE)
 [![Build Status](https://img.shields.io/github/actions/workflow/status/aryana-haghjoo/taskbranch/release.yml?style=flat-square)](https://github.com/aryana-haghjoo/taskbranch/actions)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.PLACEHOLDER.svg)](https://doi.org/10.5281/zenodo.PLACEHOLDER)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21545967.svg)](https://doi.org/10.5281/zenodo.21545967)
 
 A desktop task manager that shows your work as a tree instead of a list. Projects are the big branches, tasks are the small ones growing off them. Colour tells you status at a glance, and anything with a due date creeping up gets a glow.
 
