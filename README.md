@@ -3,7 +3,7 @@
 [![GitHub Release](https://img.shields.io/github/v/release/aryana-haghjoo/foresttask?style=flat-square)](https://github.com/aryana-haghjoo/foresttask/releases)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](LICENSE)
 [![Build Status](https://img.shields.io/github/actions/workflow/status/aryana-haghjoo/foresttask/release.yml?style=flat-square)](https://github.com/aryana-haghjoo/foresttask/actions)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21573735.svg)](https://doi.org/10.5281/zenodo.21573735)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21574295.svg)](https://doi.org/10.5281/zenodo.21574295)
 
 A desktop task manager that shows your work as a tree instead of a list. Projects are the big branches, tasks are the small ones growing off them. Colour tells you status at a glance, and anything with a due date creeping up gets a glow.
 
