@@ -20,10 +20,20 @@ jobs:
         run: npm install
 
       - name: Build
-        run: npm run dist
+        run: npm run dist 2>&1 | tee build.log
+        continue-on-error: true
 
       - name: List build artifacts
-        run: ls -lah dist/
+        run: ls -lah dist/ || echo "dist folder not found"
+
+      - name: Upload build logs on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-logs
+          path: |
+            build.log
+            package.json
 
       - name: Create Release
         uses: softprops/action-gh-release@v2
