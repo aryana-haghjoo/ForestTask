@@ -1,6 +1,6 @@
 {
-  "name": "taskbranch",
-  "productName": "TaskBranch",
+  "name": "foresttask",
+  "productName": "ForestTask",
   "version": "0.1.0",
   "description": "A graphical project & task tree — projects are big branches, tasks are the small ones. With an AI chat box powered by your own Claude or OpenAI key.",
   "main": "electron/main.js",
@@ -17,8 +17,8 @@
     "electron-builder": "^24.13.3"
   },
   "build": {
-    "appId": "com.aryana.taskbranch",
-    "productName": "TaskBranch",
+    "appId": "com.aryana.foresttask",
+    "productName": "ForestTask",
     "files": [
       "electron/**/*",
       "src/**/*",
@@ -51,7 +51,7 @@
       "entitlementsInherit": "build/entitlements.mac.plist"
     },
     "dmg": {
-      "title": "TaskBranch ${version}"
+      "title": "ForestTask ${version}"
     },
     "win": {
       "target": [

@@ -1,8 +1,8 @@
-# TaskBranch
+# ForestTask
 
-[![GitHub Release](https://img.shields.io/github/v/release/aryana-haghjoo/taskbranch?style=flat-square)](https://github.com/aryana-haghjoo/taskbranch/releases)
+[![GitHub Release](https://img.shields.io/github/v/release/aryana-haghjoo/foresttask?style=flat-square)](https://github.com/aryana-haghjoo/foresttask/releases)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](LICENSE)
-[![Build Status](https://img.shields.io/github/actions/workflow/status/aryana-haghjoo/taskbranch/release.yml?style=flat-square)](https://github.com/aryana-haghjoo/taskbranch/actions)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/aryana-haghjoo/foresttask/release.yml?style=flat-square)](https://github.com/aryana-haghjoo/foresttask/actions)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21545967.svg)](https://doi.org/10.5281/zenodo.21545967)
 
 A desktop task manager that shows your work as a tree instead of a list. Projects are the big branches, tasks are the small ones growing off them. Colour tells you status at a glance, and anything with a due date creeping up gets a glow.
@@ -29,14 +29,14 @@ Built because Notion is excellent at storing tasks and bad at letting you *see* 
 The builds are not code-signed (signing requires a $99/yr Apple Developer account), so Gatekeeper will complain on first launch. Right-click the app → **Open** → **Open**, or:
 
 ```bash
-xattr -dr com.apple.quarantine /Applications/TaskBranch.app
+xattr -dr com.apple.quarantine /Applications/ForestTask.app
 ```
 
 ## Run from source
 
 ```bash
-git clone https://github.com/aryana-haghjoo/taskbranch.git
-cd taskbranch
+git clone https://github.com/aryana-haghjoo/foresttask.git
+cd foresttask
 npm install
 npm start
 ```
@@ -57,7 +57,7 @@ Requests are made from Electron's main process, so the renderer never holds your
 
 ## Your data
 
-Everything lives at `~/Library/Application Support/TaskBranch/taskbranch-data.json`. **File → Reveal Data File** opens it in Finder. Import and export are under the File menu for easy backup and migration.
+Everything lives at `~/Library/Application Support/ForestTask/foresttask-data.json`. **File → Reveal Data File** opens it in Finder. Import and export are under the File menu for easy backup and migration.
 
 The app ships with a seed tree in `src/seed.json`. Replace it with your own before building if you're forking this.
 

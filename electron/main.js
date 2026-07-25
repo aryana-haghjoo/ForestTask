@@ -4,8 +4,8 @@ const path = require('path');
 const fs = require('fs');
 
 const USER_DIR = () => app.getPath('userData');
-const DATA_FILE = () => path.join(USER_DIR(), 'taskbranch-data.json');
-const SETTINGS_FILE = () => path.join(USER_DIR(), 'taskbranch-settings.json');
+const DATA_FILE = () => path.join(USER_DIR(), 'foresttask-data.json');
+const SETTINGS_FILE = () => path.join(USER_DIR(), 'foresttask-settings.json');
 const SEED_FILE = path.join(__dirname, '..', 'src', 'seed.json');
 
 let win = null;
@@ -122,7 +122,7 @@ function setupIPCHandlers() {
   ipcMain.handle('data:export', async (_e, data) => {
     const { canceled, filePath } = await dialog.showSaveDialog(win, {
       title: 'Export tree',
-      defaultPath: 'taskbranch-export.json',
+      defaultPath: 'foresttask-export.json',
       filters: [{ name: 'JSON', extensions: ['json'] }]
     });
     if (canceled || !filePath) return { ok: false };
